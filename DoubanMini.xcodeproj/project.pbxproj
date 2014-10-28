@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29A472AA19FF70BC0014F78A /* MovieInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29A472A919FF70BC0014F78A /* MovieInfo.xib */; };
+		29FCA3A419FF3FED008D951B /* JSRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FCA3A319FF3FED008D951B /* JSRatingView.swift */; };
+		29FCA3A719FF415C008D951B /* JSMoviedetialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FCA3A519FF415C008D951B /* JSMoviedetialCell.swift */; };
+		29FCA3A819FF415C008D951B /* JSMoviedetialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29FCA3A619FF415C008D951B /* JSMoviedetialCell.xib */; };
 		BC5F669F19DD2C5B00D06193 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5F669E19DD2C5B00D06193 /* SystemConfiguration.framework */; };
 		BC5F66A119DD2C6100D06193 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5F66A019DD2C6100D06193 /* QuartzCore.framework */; };
 		BC5F66A319DD2C6900D06193 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5F66A219DD2C6900D06193 /* ImageIO.framework */; };
@@ -24,7 +28,7 @@
 		BCF98D8419E7EE0600ED5CB6 /* RefreshChannels.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98C8B19E7EE0500ED5CB6 /* RefreshChannels.m */; };
 		BCF98D8519E7EE0600ED5CB6 /* PlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF98C8D19E7EE0500ED5CB6 /* PlayView.xib */; };
 		BCF98D8619E7EE0600ED5CB6 /* JingRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98C9019E7EE0500ED5CB6 /* JingRoundView.m */; };
-		BCF98D8719E7EE0600ED5CB6 /* JSChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98C9219E7EE0500ED5CB6 /* JSChannelCell.m */; };
+		BCF98D8719E7EE0600ED5CB6 /* JSChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98C9219E7EE0500ED5CB6 /* JSChannelCell.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		BCF98D8819E7EE0600ED5CB6 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98C9619E7EE0500ED5CB6 /* MainController.m */; };
 		BCF98D8919E7EE0600ED5CB6 /* Json_button.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98C9C19E7EE0500ED5CB6 /* Json_button.m */; };
 		BCF98D8A19E7EE0600ED5CB6 /* Tabbar_view.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98C9E19E7EE0500ED5CB6 /* Tabbar_view.m */; };
@@ -43,7 +47,7 @@
 		BCF98D9719E7EE0600ED5CB6 /* NewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98CBA19E7EE0500ED5CB6 /* NewFeatureController.m */; };
 		BCF98D9819E7EE0600ED5CB6 /* Oauth_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98CBE19E7EE0500ED5CB6 /* Oauth_ViewController.m */; };
 		BCF98D9919E7EE0600ED5CB6 /* JSDBaccount.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98CC219E7EE0500ED5CB6 /* JSDBaccount.m */; };
-		BCF98D9A19E7EE0600ED5CB6 /* Com_navigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98CC519E7EE0500ED5CB6 /* Com_navigationController.m */; };
+		BCF98D9A19E7EE0600ED5CB6 /* Com_navigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98CC519E7EE0500ED5CB6 /* Com_navigationController.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		BCF98D9B19E7EE0600ED5CB6 /* Sqlite3Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98CC819E7EE0500ED5CB6 /* Sqlite3Manager.m */; };
 		BCF98DD719E7EE0600ED5CB6 /* JSAdviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D1219E7EE0500ED5CB6 /* JSAdviceController.m */; };
 		BCF98DD819E7EE0600ED5CB6 /* JSAdviceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF98D1319E7EE0500ED5CB6 /* JSAdviceController.xib */; };
@@ -56,7 +60,7 @@
 		BCF98DDF19E7EE0600ED5CB6 /* JSUserInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D2319E7EE0600ED5CB6 /* JSUserInfoCell.m */; };
 		BCF98DE019E7EE0600ED5CB6 /* Login_out.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF98D2419E7EE0600ED5CB6 /* Login_out.xib */; };
 		BCF98DE119E7EE0600ED5CB6 /* UserInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF98D2519E7EE0600ED5CB6 /* UserInfo.xib */; };
-		BCF98DE219E7EE0600ED5CB6 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D2919E7EE0600ED5CB6 /* AFHTTPClient.m */; };
+		BCF98DE219E7EE0600ED5CB6 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D2919E7EE0600ED5CB6 /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		BCF98DE319E7EE0600ED5CB6 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D2B19E7EE0600ED5CB6 /* AFHTTPRequestOperation.m */; };
 		BCF98DE419E7EE0600ED5CB6 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D2D19E7EE0600ED5CB6 /* AFImageRequestOperation.m */; };
 		BCF98DE519E7EE0600ED5CB6 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D2F19E7EE0600ED5CB6 /* AFJSONRequestOperation.m */; };
@@ -67,12 +71,12 @@
 		BCF98DEA19E7EE0600ED5CB6 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D3A19E7EE0600ED5CB6 /* UIImageView+AFNetworking.m */; };
 		BCF98DEB19E7EE0600ED5CB6 /* AFAudioRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D3D19E7EE0600ED5CB6 /* AFAudioRouter.m */; };
 		BCF98DEC19E7EE0600ED5CB6 /* AFSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D3F19E7EE0600ED5CB6 /* AFSoundManager.m */; };
-		BCF98DED19E7EE0600ED5CB6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D4219E7EE0600ED5CB6 /* MBProgressHUD.m */; };
+		BCF98DED19E7EE0600ED5CB6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D4219E7EE0600ED5CB6 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		BCF98DEE19E7EE0600ED5CB6 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BCF98D4419E7EE0600ED5CB6 /* MJRefresh.bundle */; };
 		BCF98DEF19E7EE0600ED5CB6 /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D4719E7EE0600ED5CB6 /* MJRefreshBaseView.m */; };
 		BCF98DF019E7EE0600ED5CB6 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D4919E7EE0600ED5CB6 /* MJRefreshConst.m */; };
 		BCF98DF119E7EE0600ED5CB6 /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D4B19E7EE0600ED5CB6 /* MJRefreshFooterView.m */; };
-		BCF98DF219E7EE0600ED5CB6 /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D4D19E7EE0600ED5CB6 /* MJRefreshHeaderView.m */; };
+		BCF98DF219E7EE0600ED5CB6 /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D4D19E7EE0600ED5CB6 /* MJRefreshHeaderView.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		BCF98DF319E7EE0600ED5CB6 /* UIScrollView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D4F19E7EE0600ED5CB6 /* UIScrollView+Extension.m */; };
 		BCF98DF419E7EE0600ED5CB6 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D5119E7EE0600ED5CB6 /* UIScrollView+MJRefresh.m */; };
 		BCF98DF519E7EE0600ED5CB6 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98D5319E7EE0600ED5CB6 /* UIView+Extension.m */; };
@@ -101,18 +105,6 @@
 		BCF98E5519E810DD00ED5CB6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E1219E810DD00ED5CB6 /* Default@2x.png */; };
 		BCF98E5619E810DD00ED5CB6 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E1419E810DD00ED5CB6 /* Icon.png */; };
 		BCF98E5719E810DD00ED5CB6 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E1519E810DD00ED5CB6 /* Icon@2x.png */; };
-		BCF98E5819E810DD00ED5CB6 /* ic_star_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E1719E810DD00ED5CB6 /* ic_star_gray@2x.png */; };
-		BCF98E5919E810DD00ED5CB6 /* ic_star_half@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E1819E810DD00ED5CB6 /* ic_star_half@2x.png */; };
-		BCF98E5A19E810DD00ED5CB6 /* ic_star_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E1919E810DD00ED5CB6 /* ic_star_red@2x.png */; };
-		BCF98E5B19E810DD00ED5CB6 /* l_star_half@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E1A19E810DD00ED5CB6 /* l_star_half@2x.png */; };
-		BCF98E5C19E810DD00ED5CB6 /* l_star_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E1B19E810DD00ED5CB6 /* l_star_red@2x.png */; };
-		BCF98E5D19E810DD00ED5CB6 /* l_star_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E1C19E810DD00ED5CB6 /* l_star_white@2x.png */; };
-		BCF98E5E19E810DD00ED5CB6 /* star_faved@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E1D19E810DD00ED5CB6 /* star_faved@2x.png */; };
-		BCF98E5F19E810DD00ED5CB6 /* star_half@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E1E19E810DD00ED5CB6 /* star_half@2x.png */; };
-		BCF98E6019E810DD00ED5CB6 /* star_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E1F19E810DD00ED5CB6 /* star_red@2x.png */; };
-		BCF98E6119E810DD00ED5CB6 /* star_unfav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E2019E810DD00ED5CB6 /* star_unfav@2x.png */; };
-		BCF98E6219E810DD00ED5CB6 /* star_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E2119E810DD00ED5CB6 /* star_white@2x.png */; };
-		BCF98E6319E810DD00ED5CB6 /* starIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E2219E810DD00ED5CB6 /* starIcon.png */; };
 		BCF98E6419E810DD00ED5CB6 /* BackToList.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E2419E810DD00ED5CB6 /* BackToList.png */; };
 		BCF98E6519E810DD00ED5CB6 /* BtnDel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E2519E810DD00ED5CB6 /* BtnDel@2x.png */; };
 		BCF98E6619E810DD00ED5CB6 /* BtnDel_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E2619E810DD00ED5CB6 /* BtnDel_n@2x.png */; };
@@ -156,7 +148,6 @@
 		BCF98E8C19E810DD00ED5CB6 /* Music_ranking.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E5119E810DD00ED5CB6 /* Music_ranking.plist */; };
 		BCF98E8D19E810DD00ED5CB6 /* setlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E5219E810DD00ED5CB6 /* setlist.plist */; };
 		BCF98E9119E815B600ED5CB6 /* PlayStop.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E9019E815B600ED5CB6 /* PlayStop.png */; };
-		BCF98E9719E8184500ED5CB6 /* JSMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF98E9619E8184500ED5CB6 /* JSMovieController.m */; };
 		BCF98E9919E8235200ED5CB6 /* Dock_play.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF98E9819E8235200ED5CB6 /* Dock_play.png */; };
 		F51C72F819D81F7200300B82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51C72F719D81F7200300B82 /* Foundation.framework */; };
 		F51C72FA19D81F7200300B82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51C72F919D81F7200300B82 /* CoreGraphics.framework */; };
@@ -167,6 +158,11 @@
 		F51C731319D81F7200300B82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51C72FB19D81F7200300B82 /* UIKit.framework */; };
 		F51C731B19D81F7200300B82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F51C731919D81F7200300B82 /* InfoPlist.strings */; };
 		F51C731D19D81F7200300B82 /* DoubanMiniTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F51C731C19D81F7200300B82 /* DoubanMiniTests.m */; };
+		F5D89A4019FA7EAB000F6613 /* JSMovieInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D89A3F19FA7EAB000F6613 /* JSMovieInfoController.swift */; };
+		F5D89A4719FA85ED000F6613 /* ic_star_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5D89A4419FA85ED000F6613 /* ic_star_gray@2x.png */; };
+		F5D89A4819FA85ED000F6613 /* ic_star_half@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5D89A4519FA85ED000F6613 /* ic_star_half@2x.png */; };
+		F5D89A4919FA85ED000F6613 /* ic_star_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5D89A4619FA85ED000F6613 /* ic_star_red@2x.png */; };
+		F5FBA7FB19F7F56C00F2ACCA /* JSGetDoubanMovieInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FBA7FA19F7F56C00F2ACCA /* JSGetDoubanMovieInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +176,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29A472A919FF70BC0014F78A /* MovieInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieInfo.xib; sourceTree = "<group>"; };
+		29FCA3A319FF3FED008D951B /* JSRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSRatingView.swift; sourceTree = "<group>"; };
+		29FCA3A519FF415C008D951B /* JSMoviedetialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSMoviedetialCell.swift; sourceTree = "<group>"; };
+		29FCA3A619FF415C008D951B /* JSMoviedetialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSMoviedetialCell.xib; sourceTree = "<group>"; };
 		BC5F669E19DD2C5B00D06193 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BC5F66A019DD2C6100D06193 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BC5F66A219DD2C6900D06193 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -354,18 +354,6 @@
 		BCF98E1219E810DD00ED5CB6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BCF98E1419E810DD00ED5CB6 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		BCF98E1519E810DD00ED5CB6 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		BCF98E1719E810DD00ED5CB6 /* ic_star_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_star_gray@2x.png"; sourceTree = "<group>"; };
-		BCF98E1819E810DD00ED5CB6 /* ic_star_half@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_star_half@2x.png"; sourceTree = "<group>"; };
-		BCF98E1919E810DD00ED5CB6 /* ic_star_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_star_red@2x.png"; sourceTree = "<group>"; };
-		BCF98E1A19E810DD00ED5CB6 /* l_star_half@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "l_star_half@2x.png"; sourceTree = "<group>"; };
-		BCF98E1B19E810DD00ED5CB6 /* l_star_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "l_star_red@2x.png"; sourceTree = "<group>"; };
-		BCF98E1C19E810DD00ED5CB6 /* l_star_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "l_star_white@2x.png"; sourceTree = "<group>"; };
-		BCF98E1D19E810DD00ED5CB6 /* star_faved@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_faved@2x.png"; sourceTree = "<group>"; };
-		BCF98E1E19E810DD00ED5CB6 /* star_half@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_half@2x.png"; sourceTree = "<group>"; };
-		BCF98E1F19E810DD00ED5CB6 /* star_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_red@2x.png"; sourceTree = "<group>"; };
-		BCF98E2019E810DD00ED5CB6 /* star_unfav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_unfav@2x.png"; sourceTree = "<group>"; };
-		BCF98E2119E810DD00ED5CB6 /* star_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_white@2x.png"; sourceTree = "<group>"; };
-		BCF98E2219E810DD00ED5CB6 /* starIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starIcon.png; sourceTree = "<group>"; };
 		BCF98E2419E810DD00ED5CB6 /* BackToList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackToList.png; sourceTree = "<group>"; };
 		BCF98E2519E810DD00ED5CB6 /* BtnDel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BtnDel@2x.png"; sourceTree = "<group>"; };
 		BCF98E2619E810DD00ED5CB6 /* BtnDel_n@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BtnDel_n@2x.png"; sourceTree = "<group>"; };
@@ -409,8 +397,6 @@
 		BCF98E5119E810DD00ED5CB6 /* Music_ranking.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Music_ranking.plist; sourceTree = "<group>"; };
 		BCF98E5219E810DD00ED5CB6 /* setlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = setlist.plist; sourceTree = "<group>"; };
 		BCF98E9019E815B600ED5CB6 /* PlayStop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayStop.png; sourceTree = "<group>"; };
-		BCF98E9519E8184500ED5CB6 /* JSMovieController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMovieController.h; sourceTree = "<group>"; };
-		BCF98E9619E8184500ED5CB6 /* JSMovieController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMovieController.m; sourceTree = "<group>"; };
 		BCF98E9819E8235200ED5CB6 /* Dock_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dock_play.png; sourceTree = "<group>"; };
 		F51C72F419D81F7200300B82 /* DoubanMini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubanMini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51C72F719D81F7200300B82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -424,6 +410,13 @@
 		F51C731819D81F7200300B82 /* DoubanMiniTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoubanMiniTests-Info.plist"; sourceTree = "<group>"; };
 		F51C731A19D81F7200300B82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F51C731C19D81F7200300B82 /* DoubanMiniTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoubanMiniTests.m; sourceTree = "<group>"; };
+		F5D89A3F19FA7EAB000F6613 /* JSMovieInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSMovieInfoController.swift; sourceTree = "<group>"; };
+		F5D89A4119FA815B000F6613 /* DoubanMini-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DoubanMini-Bridging-Header.h"; sourceTree = "<group>"; };
+		F5D89A4419FA85ED000F6613 /* ic_star_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_star_gray@2x.png"; sourceTree = "<group>"; };
+		F5D89A4519FA85ED000F6613 /* ic_star_half@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_star_half@2x.png"; sourceTree = "<group>"; };
+		F5D89A4619FA85ED000F6613 /* ic_star_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_star_red@2x.png"; sourceTree = "<group>"; };
+		F5FBA7F919F7F56C00F2ACCA /* JSGetDoubanMovieInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSGetDoubanMovieInfo.h; sourceTree = "<group>"; };
+		F5FBA7FA19F7F56C00F2ACCA /* JSGetDoubanMovieInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSGetDoubanMovieInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -708,6 +701,7 @@
 		BCF98CC319E7EE0500ED5CB6 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				F5D89A4119FA815B000F6613 /* DoubanMini-Bridging-Header.h */,
 				BCF98CC419E7EE0500ED5CB6 /* Com_navigationController.h */,
 				BCF98CC519E7EE0500ED5CB6 /* Com_navigationController.m */,
 				BCF98CC619E7EE0500ED5CB6 /* Common.h */,
@@ -945,18 +939,9 @@
 		BCF98E1619E810DD00ED5CB6 /* DoubanMovie */ = {
 			isa = PBXGroup;
 			children = (
-				BCF98E1719E810DD00ED5CB6 /* ic_star_gray@2x.png */,
-				BCF98E1819E810DD00ED5CB6 /* ic_star_half@2x.png */,
-				BCF98E1919E810DD00ED5CB6 /* ic_star_red@2x.png */,
-				BCF98E1A19E810DD00ED5CB6 /* l_star_half@2x.png */,
-				BCF98E1B19E810DD00ED5CB6 /* l_star_red@2x.png */,
-				BCF98E1C19E810DD00ED5CB6 /* l_star_white@2x.png */,
-				BCF98E1D19E810DD00ED5CB6 /* star_faved@2x.png */,
-				BCF98E1E19E810DD00ED5CB6 /* star_half@2x.png */,
-				BCF98E1F19E810DD00ED5CB6 /* star_red@2x.png */,
-				BCF98E2019E810DD00ED5CB6 /* star_unfav@2x.png */,
-				BCF98E2119E810DD00ED5CB6 /* star_white@2x.png */,
-				BCF98E2219E810DD00ED5CB6 /* starIcon.png */,
+				F5D89A4419FA85ED000F6613 /* ic_star_gray@2x.png */,
+				F5D89A4519FA85ED000F6613 /* ic_star_half@2x.png */,
+				F5D89A4619FA85ED000F6613 /* ic_star_red@2x.png */,
 			);
 			path = DoubanMovie;
 			sourceTree = "<group>";
@@ -1050,24 +1035,20 @@
 		BCF98E9219E8181200ED5CB6 /* MoviesInfo */ = {
 			isa = PBXGroup;
 			children = (
-				BCF98E9319E8181200ED5CB6 /* Controller */,
+				F5FBA7F819F7F54200F2ACCA /* MovieTool */,
 				BCF98E9419E8181200ED5CB6 /* View */,
+				F5D89A3119FA78E2000F6613 /* Controller */,
 			);
 			path = MoviesInfo;
-			sourceTree = "<group>";
-		};
-		BCF98E9319E8181200ED5CB6 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				BCF98E9519E8184500ED5CB6 /* JSMovieController.h */,
-				BCF98E9619E8184500ED5CB6 /* JSMovieController.m */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		BCF98E9419E8181200ED5CB6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				29FCA3A319FF3FED008D951B /* JSRatingView.swift */,
+				29FCA3A519FF415C008D951B /* JSMoviedetialCell.swift */,
+				29A472A919FF70BC0014F78A /* MovieInfo.xib */,
+				29FCA3A619FF415C008D951B /* JSMoviedetialCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1143,6 +1124,23 @@
 				F51C731919D81F7200300B82 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5D89A3119FA78E2000F6613 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5D89A3F19FA7EAB000F6613 /* JSMovieInfoController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5FBA7F819F7F54200F2ACCA /* MovieTool */ = {
+			isa = PBXGroup;
+			children = (
+				F5FBA7F919F7F56C00F2ACCA /* JSGetDoubanMovieInfo.h */,
+				F5FBA7FA19F7F56C00F2ACCA /* JSGetDoubanMovieInfo.m */,
+			);
+			path = MovieTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1226,17 +1224,15 @@
 				BCF98E8419E810DD00ED5CB6 /* home_film@2x.png in Resources */,
 				BCF98E7919E810DD00ED5CB6 /* CoverIcon.jpg in Resources */,
 				BCF98E5619E810DD00ED5CB6 /* Icon.png in Resources */,
-				BCF98E6019E810DD00ED5CB6 /* star_red@2x.png in Resources */,
 				BCF98E5719E810DD00ED5CB6 /* Icon@2x.png in Resources */,
 				BCF98E7A19E810DD00ED5CB6 /* musicincon.png in Resources */,
 				BCF98E7E19E810DD00ED5CB6 /* red_top.png in Resources */,
 				BCF98E6519E810DD00ED5CB6 /* BtnDel@2x.png in Resources */,
 				BCF98E5519E810DD00ED5CB6 /* Default@2x.png in Resources */,
-				BCF98E5F19E810DD00ED5CB6 /* star_half@2x.png in Resources */,
 				BCF98E6719E810DD00ED5CB6 /* BtnLike@2x.png in Resources */,
 				BCF98D9019E7EE0600ED5CB6 /* HeadView.xib in Resources */,
 				BCF98E8B19E810DD00ED5CB6 /* channels.plist in Resources */,
-				BCF98E5819E810DD00ED5CB6 /* ic_star_gray@2x.png in Resources */,
+				F5D89A4919FA85ED000F6613 /* ic_star_red@2x.png in Resources */,
 				F51C730219D81F7200300B82 /* InfoPlist.strings in Resources */,
 				BCF98D8519E7EE0600ED5CB6 /* PlayView.xib in Resources */,
 				BCF98DE019E7EE0600ED5CB6 /* Login_out.xib in Resources */,
@@ -1247,7 +1243,6 @@
 				BCF98E7019E810DD00ED5CB6 /* pause.png in Resources */,
 				BCF98E6A19E810DD00ED5CB6 /* BtnNext_n@2x.png in Resources */,
 				BCF98E7219E810DD00ED5CB6 /* play_CoverMaskRing@2x.png in Resources */,
-				BCF98E6119E810DD00ED5CB6 /* star_unfav@2x.png in Resources */,
 				BCF98D9619E7EE0600ED5CB6 /* RkMusicList.xib in Resources */,
 				BCF98E6819E810DD00ED5CB6 /* BtnLike_n@2x.png in Resources */,
 				BCF98E9919E8235200ED5CB6 /* Dock_play.png in Resources */,
@@ -1258,24 +1253,23 @@
 				BCF98E7819E810DD00ED5CB6 /* loading@2x.png in Resources */,
 				BCF98E5319E810DD00ED5CB6 /* Default-568h@2x.png in Resources */,
 				BCF98E7319E810DD00ED5CB6 /* play_Round@2x.png in Resources */,
-				BCF98E6319E810DD00ED5CB6 /* starIcon.png in Resources */,
 				BCF98E6919E810DD00ED5CB6 /* BtnNext@2x.png in Resources */,
 				BCF98E6F19E810DD00ED5CB6 /* Nav_play.png in Resources */,
-				BCF98E5C19E810DD00ED5CB6 /* l_star_red@2x.png in Resources */,
-				BCF98E5919E810DD00ED5CB6 /* ic_star_half@2x.png in Resources */,
-				BCF98E5D19E810DD00ED5CB6 /* l_star_white@2x.png in Resources */,
-				BCF98E5B19E810DD00ED5CB6 /* l_star_half@2x.png in Resources */,
 				BCF98E6C19E810DD00ED5CB6 /* DBFM.png in Resources */,
 				BCF98E0C19E80E6800ED5CB6 /* PlayDock.xib in Resources */,
 				BCF98E6B19E810DD00ED5CB6 /* cell_bg@2x.png in Resources */,
+				F5D89A4719FA85ED000F6613 /* ic_star_gray@2x.png in Resources */,
 				BCF98E6D19E810DD00ED5CB6 /* FMPlayBg-568h@2x.png in Resources */,
+				F5D89A4819FA85ED000F6613 /* ic_star_half@2x.png in Resources */,
 				BCF98D9519E7EE0600ED5CB6 /* RankingInfo.xib in Resources */,
 				BCF98E8019E810DD00ED5CB6 /* Author.jpg in Resources */,
 				BCF98DEE19E7EE0600ED5CB6 /* MJRefresh.bundle in Resources */,
 				BCF98E7419E810DD00ED5CB6 /* play_sound@2x.png in Resources */,
+				29FCA3A819FF415C008D951B /* JSMoviedetialCell.xib in Resources */,
 				BCF98E6419E810DD00ED5CB6 /* BackToList.png in Resources */,
 				BCF98E7D19E810DD00ED5CB6 /* radio_top.png in Resources */,
 				BCF98E8119E810DD00ED5CB6 /* Back_Setting.png in Resources */,
+				29A472AA19FF70BC0014F78A /* MovieInfo.xib in Resources */,
 				BCF98E9119E815B600ED5CB6 /* PlayStop.png in Resources */,
 				BCF98E8319E810DD00ED5CB6 /* user_normal.jpg in Resources */,
 				BCF98DD819E7EE0600ED5CB6 /* JSAdviceController.xib in Resources */,
@@ -1286,15 +1280,12 @@
 				BCF98D9219E7EE0600ED5CB6 /* JSRankingCellTableViewCell.xib in Resources */,
 				BCF98E8A19E810DD00ED5CB6 /* AboutAuthor.txt in Resources */,
 				BCF98E7719E810DD00ED5CB6 /* start.png in Resources */,
-				BCF98E5E19E810DD00ED5CB6 /* star_faved@2x.png in Resources */,
-				BCF98E5A19E810DD00ED5CB6 /* ic_star_red@2x.png in Resources */,
 				BCF98E6619E810DD00ED5CB6 /* BtnDel_n@2x.png in Resources */,
 				BCF98E8819E810DD00ED5CB6 /* TabBar_bg@2x.png in Resources */,
 				BCF98DDE19E7EE0600ED5CB6 /* JSUserInfo.xib in Resources */,
 				BCF98E7C19E810DD00ED5CB6 /* original_top.png in Resources */,
 				BCF98DDC19E7EE0600ED5CB6 /* JSListCell.xib in Resources */,
 				BCF98DE119E7EE0600ED5CB6 /* UserInfo.xib in Resources */,
-				BCF98E6219E810DD00ED5CB6 /* star_white@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1328,7 +1319,6 @@
 				BCF98DE219E7EE0600ED5CB6 /* AFHTTPClient.m in Sources */,
 				BCF98DF919E7EE0600ED5CB6 /* SDWebImageCompat.m in Sources */,
 				BCF98DFB19E7EE0600ED5CB6 /* SDWebImageDownloader.m in Sources */,
-				BCF98E9719E8184500ED5CB6 /* JSMovieController.m in Sources */,
 				BCF98DF719E7EE0600ED5CB6 /* NSData+ImageContentType.m in Sources */,
 				BCF98DF319E7EE0600ED5CB6 /* UIScrollView+Extension.m in Sources */,
 				BCF98DF019E7EE0600ED5CB6 /* MJRefreshConst.m in Sources */,
@@ -1344,9 +1334,11 @@
 				BCF98DFA19E7EE0600ED5CB6 /* SDWebImageDecoder.m in Sources */,
 				BCF98DFD19E7EE0600ED5CB6 /* SDWebImageManager.m in Sources */,
 				BCF98DD919E7EE0600ED5CB6 /* JSAuthorInfoController.m in Sources */,
+				29FCA3A719FF415C008D951B /* JSMoviedetialCell.swift in Sources */,
 				BCF98E0719E7EE0600ED5CB6 /* JSGetFMlistFromDouBan.m in Sources */,
 				BCF98DEB19E7EE0600ED5CB6 /* AFAudioRouter.m in Sources */,
 				BCF98D8719E7EE0600ED5CB6 /* JSChannelCell.m in Sources */,
+				F5D89A4019FA7EAB000F6613 /* JSMovieInfoController.swift in Sources */,
 				BCF98D8819E7EE0600ED5CB6 /* MainController.m in Sources */,
 				BCF98DE719E7EE0600ED5CB6 /* AFPropertyListRequestOperation.m in Sources */,
 				BCF98DE819E7EE0600ED5CB6 /* AFURLConnectionOperation.m in Sources */,
@@ -1356,6 +1348,7 @@
 				BCF98DEA19E7EE0600ED5CB6 /* UIImageView+AFNetworking.m in Sources */,
 				BCF98E0419E7EE0600ED5CB6 /* UIImageView+WebCache.m in Sources */,
 				BCF98DED19E7EE0600ED5CB6 /* MBProgressHUD.m in Sources */,
+				F5FBA7FB19F7F56C00F2ACCA /* JSGetDoubanMovieInfo.m in Sources */,
 				BCF98D8D19E7EE0600ED5CB6 /* JSMusicController.m in Sources */,
 				BCF98DE519E7EE0600ED5CB6 /* AFJSONRequestOperation.m in Sources */,
 				BCF98D9919E7EE0600ED5CB6 /* JSDBaccount.m in Sources */,
@@ -1381,6 +1374,7 @@
 				BCF98DFE19E7EE0600ED5CB6 /* SDWebImagePrefetcher.m in Sources */,
 				BCF98DEC19E7EE0600ED5CB6 /* AFSoundManager.m in Sources */,
 				BCF98D7F19E7EE0600ED5CB6 /* JSPlayViewController.m in Sources */,
+				29FCA3A419FF3FED008D951B /* JSRatingView.swift in Sources */,
 				BCF98DF519E7EE0600ED5CB6 /* UIView+Extension.m in Sources */,
 				BCF98D8219E7EE0600ED5CB6 /* JSGetMusicListFromNet.m in Sources */,
 				BCF98D9B19E7EE0600ED5CB6 /* Sqlite3Manager.m in Sources */,
@@ -1510,11 +1504,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DoubanMini/DoubanMini-Prefix.pch";
 				INFOPLIST_FILE = "DoubanMini/DoubanMini-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DoubanMini/Classes/Others/DoubanMini-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1524,11 +1522,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DoubanMini/DoubanMini-Prefix.pch";
 				INFOPLIST_FILE = "DoubanMini/DoubanMini-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DoubanMini/Classes/Others/DoubanMini-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
