@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2985C1DA1A03B1AD000B7750 /* defaultmovie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2985C1D91A03B1AD000B7750 /* defaultmovie@2x.png */; };
 		29A472AA19FF70BC0014F78A /* MovieInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29A472A919FF70BC0014F78A /* MovieInfo.xib */; };
-		29CDD0951A035CC9003D39E0 /* JSLoadUrlImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CDD0941A035CC9003D39E0 /* JSLoadUrlImage.m */; };
 		29FCA3A419FF3FED008D951B /* JSRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FCA3A319FF3FED008D951B /* JSRatingView.swift */; };
 		29FCA3A719FF415C008D951B /* JSMoviedetialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FCA3A519FF415C008D951B /* JSMoviedetialCell.swift */; };
 		29FCA3A819FF415C008D951B /* JSMoviedetialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29FCA3A619FF415C008D951B /* JSMoviedetialCell.xib */; };
@@ -180,8 +179,6 @@
 /* Begin PBXFileReference section */
 		2985C1D91A03B1AD000B7750 /* defaultmovie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "defaultmovie@2x.png"; sourceTree = "<group>"; };
 		29A472A919FF70BC0014F78A /* MovieInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieInfo.xib; sourceTree = "<group>"; };
-		29CDD0931A035CC9003D39E0 /* JSLoadUrlImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSLoadUrlImage.h; sourceTree = "<group>"; };
-		29CDD0941A035CC9003D39E0 /* JSLoadUrlImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSLoadUrlImage.m; sourceTree = "<group>"; };
 		29FCA3A319FF3FED008D951B /* JSRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSRatingView.swift; sourceTree = "<group>"; };
 		29FCA3A519FF415C008D951B /* JSMoviedetialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSMoviedetialCell.swift; sourceTree = "<group>"; };
 		29FCA3A619FF415C008D951B /* JSMoviedetialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSMoviedetialCell.xib; sourceTree = "<group>"; };
@@ -1145,8 +1142,6 @@
 			children = (
 				F5FBA7F919F7F56C00F2ACCA /* JSGetDoubanMovieInfo.h */,
 				F5FBA7FA19F7F56C00F2ACCA /* JSGetDoubanMovieInfo.m */,
-				29CDD0931A035CC9003D39E0 /* JSLoadUrlImage.h */,
-				29CDD0941A035CC9003D39E0 /* JSLoadUrlImage.m */,
 			);
 			path = MovieTool;
 			sourceTree = "<group>";
@@ -1372,7 +1367,6 @@
 				BCF98D8319E7EE0600ED5CB6 /* JSPlayMusic.m in Sources */,
 				BCF98D8C19E7EE0600ED5CB6 /* main.m in Sources */,
 				BCF98DDF19E7EE0600ED5CB6 /* JSUserInfoCell.m in Sources */,
-				29CDD0951A035CC9003D39E0 /* JSLoadUrlImage.m in Sources */,
 				BCF98D8019E7EE0600ED5CB6 /* JSChannel.m in Sources */,
 				BCF98DDD19E7EE0600ED5CB6 /* JSLoginCell.m in Sources */,
 				BCF98E0119E7EE0600ED5CB6 /* UIImage+MultiFormat.m in Sources */,
