@@ -35,10 +35,12 @@ class JSMovieInfoController: UIViewController,UICollectionViewDataSource,UIColle
         NSBundle.mainBundle().loadNibNamed("MovieInfo", owner: self, options: nil);
          SetUpView();
     }
-    
+     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated);
+    }
  func SetUpView()
  {
-    self.title="豆瓣电影";
+    self.title="正在上映";
     var leftbtn:UIButton=UIButton.buttonWithType(UIButtonType.Custom) as UIButton;
     leftbtn.setBackgroundImage(UIImage(named: "refresh_pressed.png"), forState: UIControlState.Normal);
     leftbtn.setBackgroundImage(UIImage(named: "refresh_pressed.png"), forState: UIControlState.Highlighted);

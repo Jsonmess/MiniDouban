@@ -48,14 +48,13 @@ public class JSMoviedetialCell: UICollectionViewCell {
         //电影海报--使用多线程主线程更新视图
         var  queue: dispatch_queue_attr_t=dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
         dispatch_async(queue, { () -> Void in
-            var imageview:UIImageView=JSLoadUrlImage.getimageWithUrl(picurl);
+            self.moviePicture.sd_setImageWithURL(NSURL(string: picurl), placeholderImage:  UIImage(named: "defaultmovie@2x.png"), options: SDWebImageOptions.LowPriority|SDWebImageOptions.RetryFailed);
             //主线程更新
             dispatch_sync(dispatch_get_main_queue(), { () -> Void in
-                
                 self.movieScoreValue.text=NSString(format: "%.1f", rating);
                 self.movieName.text=name;
                 self.ratingview?.showStarbyRatingValueWith(RatingValue: rating);
-                self.moviePicture.image=imageview.image;
+                
             });
         });
         
