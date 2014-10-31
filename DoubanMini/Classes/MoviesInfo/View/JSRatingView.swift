@@ -36,9 +36,7 @@ public class JSRatingView: UIImageView {
  private  func setUpView(){
         initSubview();
         //设置子控件fram
-        initSubviewFrame();
-        //设置view
-        
+        initSubviewFrame();   
     }
  private func initSubview( )
     {
@@ -105,10 +103,8 @@ public class JSRatingView: UIImageView {
         floatNum-=0.5;
         if ( floatNum > 0.2)
         {
-            print("进1")
             self.calculateStarNumberByValue(intNum+1, hasHalf: false);
         }else if (floatNum < -0.2){
-            print("舍去")
             self.calculateStarNumberByValue(intNum, hasHalf: false);
         }else
         {

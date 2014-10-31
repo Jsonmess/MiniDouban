@@ -50,7 +50,7 @@ class JSMovieInfoController: UIViewController,UICollectionViewDataSource,UIColle
     MovieList.frame=CGRectMake(0, 0,MovieList.frame.size.width, MovieList.frame.size.height-CGFloat( Ktabbar_height));
     if MovieInfoCell==nil
     {
-        MovieInfoCell=JSMoviedetialCell(frame: CGRectMake(0, 0, 100, 160));
+        MovieInfoCell=JSMoviedetialCell(frame: CGRectMake(0, 0, 100, 175));
     }
     MovieList.dataSource=self;
     MovieList.delegate=self;
@@ -95,6 +95,10 @@ class JSMovieInfoController: UIViewController,UICollectionViewDataSource,UIColle
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell:JSMoviedetialCell=collectionView.dequeueReusableCellWithReuseIdentifier(CellIdentifier, forIndexPath: indexPath) as JSMoviedetialCell;
        //在此处传入电影数据
+        var movie_name:NSString = ( movielistArray[indexPath.row] as NSDictionary)["title"] as NSString;
+        var picurl:NSString=((movielistArray[indexPath.row] as NSDictionary)["images"] as NSDictionary)["medium"] as NSString;
+        var rating:NSString=( movielistArray[indexPath.row] as NSDictionary)["rating"] as NSString;
+        cell.setMoviedetialCellBy(MovieName: movie_name, MoviePic:picurl, MovieRating: rating.floatValue);
         return cell;
     }
     
