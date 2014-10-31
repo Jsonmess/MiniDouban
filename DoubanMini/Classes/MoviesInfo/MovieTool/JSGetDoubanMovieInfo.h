@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
+typedef void(^GetInfoSuccess)(NSDictionary *dic);
+typedef void(^GetInfoFalse)(NSError *error);
 @interface JSGetDoubanMovieInfo : NSObject
-
+-(void)getMovieInfoFromDoubanServiceWithBlock:(GetInfoSuccess)success Failed:(GetInfoFalse)failed;
 @end

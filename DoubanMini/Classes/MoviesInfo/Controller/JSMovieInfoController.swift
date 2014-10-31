@@ -17,6 +17,8 @@ class JSMovieInfoController: UIViewController,UICollectionViewDataSource,UIColle
     
     var MovieInfoCell: JSMoviedetialCell?;
     var getinfoTool:JSGetDoubanMovieInfo?;
+    var movielistArray:NSMutableArray!;//电影信息列表
+    var indicator:UIActivityIndicatorView!;
    //function
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -30,13 +32,21 @@ class JSMovieInfoController: UIViewController,UICollectionViewDataSource,UIColle
     }
     override func viewDidLoad() {
         super.viewDidLoad();
+        NSBundle.mainBundle().loadNibNamed("MovieInfo", owner: self, options: nil);
          SetUpView();
     }
-
+    
  func SetUpView()
  {
     self.title="豆瓣电影";
-  NSBundle.mainBundle().loadNibNamed("MovieInfo", owner: self, options: nil);
+    var leftbtn:UIButton=UIButton.buttonWithType(UIButtonType.Custom) as UIButton;
+    leftbtn.setBackgroundImage(UIImage(named: "refresh_pressed.png"), forState: UIControlState.Normal);
+    leftbtn.setBackgroundImage(UIImage(named: "refresh_pressed.png"), forState: UIControlState.Highlighted);
+    leftbtn.frame=CGRectMake(0, 0, 32.0, 32.0);
+    leftbtn.addTarget(self, action:"refreshData", forControlEvents: UIControlEvents.TouchUpInside);
+    var left:UIBarButtonItem=UIBarButtonItem(customView: leftbtn);
+    self.navigationItem.setLeftBarButtonItem(left, animated: true);
+    
     MovieList.frame=CGRectMake(0, 0,MovieList.frame.size.width, MovieList.frame.size.height-CGFloat( Ktabbar_height));
     if MovieInfoCell==nil
     {
@@ -44,6 +54,7 @@ class JSMovieInfoController: UIViewController,UICollectionViewDataSource,UIColle
     }
     MovieList.dataSource=self;
     MovieList.delegate=self;
+
     //rigister cell
     MovieList.registerClass(MovieInfoCell?.classForCoder, forCellWithReuseIdentifier: CellIdentifier);
     self.view.addSubview(MovieList);
@@ -52,12 +63,34 @@ class JSMovieInfoController: UIViewController,UICollectionViewDataSource,UIColle
     {
         getinfoTool=JSGetDoubanMovieInfo();
     }
-    getinfoTool?.getMovieInfoFromDoubanService();
- }
+    self.movielistArray=NSMutableArray();
+    self.indicator=UIActivityIndicatorView();
+    self.indicator.frame=CGRectMake(self.view.bounds.size.width*0.4, self.view.bounds.size.height*0.5, 60, 60);
+    self.view.addSubview(self.indicator);
+    self.indicator.activityIndicatorViewStyle=UIActivityIndicatorViewStyle.Gray;
+ 
+    //获取数据
+    self.getinfoFromDouban();
+    }
+    //MARK:获取电影数据
+    func getinfoFromDouban()
+    {
+        self.indicator.startAnimating();
+        getinfoTool?.getMovieInfoFromDoubanServiceWithBlock({
+            (dic:[NSObject : AnyObject]!) -> Void in
+            var thedic:NSDictionary = dic;
+            self.movielistArray=thedic.valueForKey("entries") as NSMutableArray;
+            self.MovieList.reloadData();
+            self.indicator.stopAnimating();
+            }, failed: { (error:NSError!) -> Void in
+                
+        });
+    }
 
       //MARK:Collectionview代理
      func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 40;
+    
+            return self.movielistArray.count;
     }
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell:JSMoviedetialCell=collectionView.dequeueReusableCellWithReuseIdentifier(CellIdentifier, forIndexPath: indexPath) as JSMoviedetialCell;
@@ -73,5 +106,9 @@ class JSMovieInfoController: UIViewController,UICollectionViewDataSource,UIColle
         super.didReceiveMemoryWarning()
     
     }
- 
+ //MARK:刷新列表
+    func refreshData()
+    {
+        self.getinfoFromDouban();
+    }
 }

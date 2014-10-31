@@ -7,7 +7,26 @@
 //
 
 #import "JSGetDoubanMovieInfo.h"
-
+#import "HttpTool.h"
 @implementation JSGetDoubanMovieInfo
+
+
+-(void)getMovieInfoFromDoubanServiceWithBlock:(GetInfoSuccess)success Failed:(GetInfoFalse)failed;
+{
+    [HttpTool HttpSendwithPath:@"http://api.douban.com" path:@"/v2/movie/nowplaying" Params:
+                                        @{
+                                          @"alt":@"json",
+                                          @"apikey":@"0df993c66c0c636e29ecbb5344252a4a"
+                                            }
+                   PostSuccess:^(id Json){
+                       NSDictionary *dic=Json;
+                       success(dic);
+                      
+                                        }
+            PostFaild:^(NSError *error){
+                failed(error);
+                                        } WithMethod:@"GET"];
+}
+
 
 @end
