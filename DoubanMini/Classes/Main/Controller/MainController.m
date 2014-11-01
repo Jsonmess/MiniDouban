@@ -1,6 +1,5 @@
 //
 //  MainController.m
-//  sinaweibo
 //
 //  Created by Json on 14-5-30.
 //  Copyright (c) 2014年 Json. All rights reserved.
@@ -12,7 +11,7 @@
 #import "Com_navigationController.h"
 #import "JSSetingViewController.h"
 #import "JSMusicController.h"
-#import "JSMovieController.h"
+#import "DoubanMini-swift.h"
 #define KChildControllerFrame
 @interface MainController ()<UINavigationControllerDelegate>
 
@@ -77,7 +76,7 @@
     [self addChildViewController:navm];
     
     //豆瓣电影
-    JSMovieController *DBmovie=[[JSMovieController alloc]init];
+    JSMovieInfoController *DBmovie=[[JSMovieInfoController alloc]init];
     Com_navigationController *navmo=[[Com_navigationController alloc]initWithRootViewController:DBmovie];
     //用于隐藏dock后的视图调整
     [navmo setDelegate:self];
