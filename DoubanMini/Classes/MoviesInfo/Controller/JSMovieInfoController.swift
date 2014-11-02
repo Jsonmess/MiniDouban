@@ -103,11 +103,10 @@ class JSMovieInfoController: UIViewController,UICollectionViewDataSource,UIColle
         cell.setMoviedetialCellBy(MovieName: movie_name, MoviePic:picurl, MovieRating: rating.floatValue);
         return cell;
     }
-    
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        //点击进入电影信息详细
+        
+       //进入电影详细信息
     }
- 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     
