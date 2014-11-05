@@ -27,6 +27,22 @@
                 failed(error);
                                         } WithMethod:@"GET"];
 }
+-(void)getMovieDetailInfoFromDoubanServiceWithMovieID:(NSString *)movie_id SuccessBlock:(GetInfoSuccess)success FailedBlock:(GetInfoFalse)failed;
+{
+    [HttpTool HttpSendwithPath:@"http://api.douban.com" path:[@"/v2/movie/subject" stringByAppendingPathComponent:movie_id] Params:
+     @{
+       @"alt":@"json",
+       @"apikey":@"0df993c66c0c636e29ecbb5344252a4a"
+       }
+                   PostSuccess:^(id Json){
+                       NSDictionary *dic=Json;
+                       success(dic);
+                       
+                   }
+                     PostFaild:^(NSError *error){
+                         failed(error);
+                     } WithMethod:@"GET"];
+}
 
 
 @end
