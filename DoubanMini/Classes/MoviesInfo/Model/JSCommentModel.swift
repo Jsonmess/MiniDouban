@@ -11,29 +11,31 @@ rating:评分
 name：评论用户昵称
 avatar:评论用户头像url
 content:评论内容
-{
-"rating" : {
-"max" : 5,
-"value" : 2,
-"min" : 0
-},
-"author" : {
-"id" : "41382894",
-"signature" : "suck my cock,beeetchez~~",
-"uid" : "EvanChouu",
-"alt" : "http:\/\/movie.douban.com\/people\/EvanChouu\/",
-"name" : "粵語殘片",
-"avatar" : "http:\/\/img3.douban.com\/icon\/u41382894-16.jpg"
-},
-"content" : "改编得真烂，原作里斯普林特本是日本武士，跟斯莱德是同门宿敌，后来才被变为老鼠，命途多舛，电影里还真他妈是老鼠变的。原作精神一点没有，求别来续集了。",
-"id" : "837153269",
-"created_at" : "2014-08-17 17:02:57",
-"subject_id" : "3217149",
-"useful_count" : 129
-},
+
 */
 import UIKit
 
-class JSCommentModel: NSObject {
-   
+public class JSCommentModel: NSObject {
+    public var rating:NSString?;//评分
+    public var name:NSString?;//评论用户昵称
+    public var avatar:NSString?;//评论用户头像url
+    public var content:NSString?;//评论内容
+    
+    init(Comment:NSDictionary?)
+    {
+        super.init();
+        self.setvalueWith(Comment);
+    }
+    
+    private func setvalueWith(com:NSDictionary!)
+    {
+       if com != nil
+       {
+        self.rating=(com["rating"] as NSDictionary)["value"] as? NSString;
+        self.name=(com["author"] as NSDictionary)["name"] as? NSString;
+        self.avatar=(com["author"] as NSDictionary)["avatar"] as? NSString;
+        self.content=(com["author"] as NSDictionary)["content"] as? NSString;
+        }
+        
+    }
 }
