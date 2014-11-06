@@ -108,11 +108,7 @@ class JSMovieInfoController: UIViewController,UICollectionViewDataSource,UIColle
        //进入电影详细信息
         var movieDetialController=JSMovieDetialViewController();
         var movieid:NSString = (movielistArray[indexPath.row] as NSDictionary)["id"] as NSString;
-        self.getinfoTool?.getMovieDetailInfoFromDoubanServiceWithMovieID(movieid, successBlock: { (dic:[NSObject : AnyObject]!) -> Void in
-            
-            }, failedBlock: { (error:NSError!) -> Void in
-            
-        })
+        movieDetialController.setMovieId(movieid);
         self.navigationController?.pushViewController(movieDetialController, animated: true);
         
         

@@ -9,7 +9,11 @@
 /* Begin PBXBuildFile section */
 		2985C1DA1A03B1AD000B7750 /* defaultmovie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2985C1D91A03B1AD000B7750 /* defaultmovie@2x.png */; };
 		29A472AA19FF70BC0014F78A /* MovieInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29A472A919FF70BC0014F78A /* MovieInfo.xib */; };
-		29FCA3A419FF3FED008D951B /* JSRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FCA3A319FF3FED008D951B /* JSRatingView.swift */; };
+		29AB46921A05EA2D0003C016 /* JSMovieDetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AB46901A05EA2D0003C016 /* JSMovieDetialViewController.swift */; };
+		29CCE6341A0A63E400D25AC6 /* JSRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CCE6331A0A63E400D25AC6 /* JSRatingView.swift */; };
+		29CCE6361A0A64E400D25AC6 /* JSMovieDetialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29CCE6351A0A64E400D25AC6 /* JSMovieDetialViewController.xib */; };
+		29CCE6391A0A702B00D25AC6 /* JSMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CCE6381A0A702B00D25AC6 /* JSMovieModel.swift */; };
+		29CCE63F1A0A756A00D25AC6 /* JSCommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CCE63E1A0A756A00D25AC6 /* JSCommentModel.swift */; };
 		29FCA3A719FF415C008D951B /* JSMoviedetialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FCA3A519FF415C008D951B /* JSMoviedetialCell.swift */; };
 		29FCA3A819FF415C008D951B /* JSMoviedetialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29FCA3A619FF415C008D951B /* JSMoviedetialCell.xib */; };
 		BC5F669F19DD2C5B00D06193 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5F669E19DD2C5B00D06193 /* SystemConfiguration.framework */; };
@@ -179,7 +183,11 @@
 /* Begin PBXFileReference section */
 		2985C1D91A03B1AD000B7750 /* defaultmovie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "defaultmovie@2x.png"; sourceTree = "<group>"; };
 		29A472A919FF70BC0014F78A /* MovieInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieInfo.xib; sourceTree = "<group>"; };
-		29FCA3A319FF3FED008D951B /* JSRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSRatingView.swift; sourceTree = "<group>"; };
+		29AB46901A05EA2D0003C016 /* JSMovieDetialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSMovieDetialViewController.swift; sourceTree = "<group>"; };
+		29CCE6331A0A63E400D25AC6 /* JSRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSRatingView.swift; sourceTree = "<group>"; };
+		29CCE6351A0A64E400D25AC6 /* JSMovieDetialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSMovieDetialViewController.xib; sourceTree = "<group>"; };
+		29CCE6381A0A702B00D25AC6 /* JSMovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSMovieModel.swift; sourceTree = "<group>"; };
+		29CCE63E1A0A756A00D25AC6 /* JSCommentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSCommentModel.swift; sourceTree = "<group>"; };
 		29FCA3A519FF415C008D951B /* JSMoviedetialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSMoviedetialCell.swift; sourceTree = "<group>"; };
 		29FCA3A619FF415C008D951B /* JSMoviedetialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSMoviedetialCell.xib; sourceTree = "<group>"; };
 		BC5F669E19DD2C5B00D06193 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -450,6 +458,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29CCE6371A0A6FEF00D25AC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				29CCE6381A0A702B00D25AC6 /* JSMovieModel.swift */,
+				29CCE63E1A0A756A00D25AC6 /* JSCommentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BCF98C7019E7EE0500ED5CB6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -1038,6 +1055,7 @@
 		BCF98E9219E8181200ED5CB6 /* MoviesInfo */ = {
 			isa = PBXGroup;
 			children = (
+				29CCE6371A0A6FEF00D25AC6 /* Model */,
 				F5FBA7F819F7F54200F2ACCA /* MovieTool */,
 				BCF98E9419E8181200ED5CB6 /* View */,
 				F5D89A3119FA78E2000F6613 /* Controller */,
@@ -1048,7 +1066,8 @@
 		BCF98E9419E8181200ED5CB6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				29FCA3A319FF3FED008D951B /* JSRatingView.swift */,
+				29CCE6351A0A64E400D25AC6 /* JSMovieDetialViewController.xib */,
+				29CCE6331A0A63E400D25AC6 /* JSRatingView.swift */,
 				29FCA3A519FF415C008D951B /* JSMoviedetialCell.swift */,
 				29A472A919FF70BC0014F78A /* MovieInfo.xib */,
 				29FCA3A619FF415C008D951B /* JSMoviedetialCell.xib */,
@@ -1133,6 +1152,7 @@
 			isa = PBXGroup;
 			children = (
 				F5D89A3F19FA7EAB000F6613 /* JSMovieInfoController.swift */,
+				29AB46901A05EA2D0003C016 /* JSMovieDetialViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1272,6 +1292,7 @@
 				BCF98E6419E810DD00ED5CB6 /* BackToList.png in Resources */,
 				BCF98E7D19E810DD00ED5CB6 /* radio_top.png in Resources */,
 				BCF98E8119E810DD00ED5CB6 /* Back_Setting.png in Resources */,
+				29CCE6361A0A64E400D25AC6 /* JSMovieDetialViewController.xib in Resources */,
 				29A472AA19FF70BC0014F78A /* MovieInfo.xib in Resources */,
 				BCF98E9119E815B600ED5CB6 /* PlayStop.png in Resources */,
 				BCF98E8319E810DD00ED5CB6 /* user_normal.jpg in Resources */,
@@ -1319,6 +1340,7 @@
 				BCF98DFF19E7EE0600ED5CB6 /* UIButton+WebCache.m in Sources */,
 				BCF98DF219E7EE0600ED5CB6 /* MJRefreshHeaderView.m in Sources */,
 				BCF98D9A19E7EE0600ED5CB6 /* Com_navigationController.m in Sources */,
+				29AB46921A05EA2D0003C016 /* JSMovieDetialViewController.swift in Sources */,
 				BCF98DF419E7EE0600ED5CB6 /* UIScrollView+MJRefresh.m in Sources */,
 				BCF98DE219E7EE0600ED5CB6 /* AFHTTPClient.m in Sources */,
 				BCF98DF919E7EE0600ED5CB6 /* SDWebImageCompat.m in Sources */,
@@ -1339,12 +1361,14 @@
 				BCF98DFD19E7EE0600ED5CB6 /* SDWebImageManager.m in Sources */,
 				BCF98DD919E7EE0600ED5CB6 /* JSAuthorInfoController.m in Sources */,
 				29FCA3A719FF415C008D951B /* JSMoviedetialCell.swift in Sources */,
+				29CCE6341A0A63E400D25AC6 /* JSRatingView.swift in Sources */,
 				BCF98E0719E7EE0600ED5CB6 /* JSGetFMlistFromDouBan.m in Sources */,
 				BCF98DEB19E7EE0600ED5CB6 /* AFAudioRouter.m in Sources */,
 				BCF98D8719E7EE0600ED5CB6 /* JSChannelCell.m in Sources */,
 				F5D89A4019FA7EAB000F6613 /* JSMovieInfoController.swift in Sources */,
 				BCF98D8819E7EE0600ED5CB6 /* MainController.m in Sources */,
 				BCF98DE719E7EE0600ED5CB6 /* AFPropertyListRequestOperation.m in Sources */,
+				29CCE63F1A0A756A00D25AC6 /* JSCommentModel.swift in Sources */,
 				BCF98DE819E7EE0600ED5CB6 /* AFURLConnectionOperation.m in Sources */,
 				BCF98D8619E7EE0600ED5CB6 /* JingRoundView.m in Sources */,
 				BCF98D8119E7EE0600ED5CB6 /* JSSongInfo.m in Sources */,
@@ -1365,6 +1389,7 @@
 				BCF98E0A19E80E1D00ED5CB6 /* JSPlayDock.m in Sources */,
 				BCF98DF119E7EE0600ED5CB6 /* MJRefreshFooterView.m in Sources */,
 				BCF98D8319E7EE0600ED5CB6 /* JSPlayMusic.m in Sources */,
+				29CCE6391A0A702B00D25AC6 /* JSMovieModel.swift in Sources */,
 				BCF98D8C19E7EE0600ED5CB6 /* main.m in Sources */,
 				BCF98DDF19E7EE0600ED5CB6 /* JSUserInfoCell.m in Sources */,
 				BCF98D8019E7EE0600ED5CB6 /* JSChannel.m in Sources */,
@@ -1378,7 +1403,6 @@
 				BCF98DFE19E7EE0600ED5CB6 /* SDWebImagePrefetcher.m in Sources */,
 				BCF98DEC19E7EE0600ED5CB6 /* AFSoundManager.m in Sources */,
 				BCF98D7F19E7EE0600ED5CB6 /* JSPlayViewController.m in Sources */,
-				29FCA3A419FF3FED008D951B /* JSRatingView.swift in Sources */,
 				BCF98DF519E7EE0600ED5CB6 /* UIView+Extension.m in Sources */,
 				BCF98D8219E7EE0600ED5CB6 /* JSGetMusicListFromNet.m in Sources */,
 				BCF98D9B19E7EE0600ED5CB6 /* Sqlite3Manager.m in Sources */,

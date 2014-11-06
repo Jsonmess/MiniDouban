@@ -31,10 +31,10 @@ public class JSCommentModel: NSObject {
     {
        if com != nil
        {
-        self.rating=(com["rating"] as NSDictionary)["value"] as? NSString;
+        self.rating=NSString(format: "%d",(com["rating"] as NSDictionary)["value"] as NSInteger);
         self.name=(com["author"] as NSDictionary)["name"] as? NSString;
         self.avatar=(com["author"] as NSDictionary)["avatar"] as? NSString;
-        self.content=(com["author"] as NSDictionary)["content"] as? NSString;
+        self.content=com["content"] as? NSString;
         }
         
     }
