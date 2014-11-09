@@ -26,6 +26,7 @@ public class JSRatingView: UIImageView {
 //MARK: 初始化
   required public init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder);
+         //self.setUpView();
     }
     override init(frame: CGRect) {
         super.init(frame:frame);
@@ -36,7 +37,9 @@ public class JSRatingView: UIImageView {
  private  func setUpView(){
         initSubview();
         //设置子控件fram
-        initSubviewFrame();   
+        initSubviewFrame();
+        //设置view
+        
     }
  private func initSubview( )
     {
@@ -87,35 +90,38 @@ public class JSRatingView: UIImageView {
     }
 
 //MARK:根据传入的评分值计算需要显示的星级
- public  func showStarbyRatingValueWith(RatingValue value:Float)
+    public  func showStarbyRatingValueWith(RatingValue value:Float)
     {
         
-        //取整数部分
-        var intNum = Int(value*0.5);
-        //取小数部分
-        var floatNum = value*0.5-Float(intNum)
-        //如果小于0
-        
-        if value<=0{
+        if value <= 0{
+            // 清除之前的分值
+            self.clearImageView();
             return;
-        }
-        //大于0
-        floatNum-=0.5;
-        if ( floatNum > 0.2)
-        {
-            self.calculateStarNumberByValue(intNum+1, hasHalf: false);
-        }else if (floatNum < -0.2){
-            self.calculateStarNumberByValue(intNum, hasHalf: false);
-        }else
-        {
-          self.calculateStarNumberByValue(intNum, hasHalf: true);
+        }else{
+            //取整数部分
+            var intNum = Int(value*0.5);
+            //取小数部
+            var floatNum = value*0.5-Float(intNum)
+            //大于0
+            floatNum-=0.5;
+            if ( floatNum > 0.2)
+            {
+                print("进1")
+                self.calculateStarNumberByValue(intNum+1, hasHalf: false);
+            }else if (floatNum < -0.2){
+                print("舍去")
+                self.calculateStarNumberByValue(intNum, hasHalf: false);
+            }else
+            {
+                self.calculateStarNumberByValue(intNum, hasHalf: true);
+            }
         }
     }
     
     private func calculateStarNumberByValue(number:Int,hasHalf:Bool)
     {
-        // 清除之前的分值（初始化）
-        self.initSubview();
+        // 清除之前的分值
+        self.clearImageView();
         //设置新的值
         for (var i=0;i<number;i++)
         {
@@ -129,6 +135,21 @@ public class JSRatingView: UIImageView {
         }
         
     }
-  
+   //MARK:清除所有星级
+    private func clearImageView()
+    {
+
+        show_star0.image=UIImage(named:star_gray)!
+   
+        show_star1.image=UIImage(named:star_gray)!
+    
+        show_star2.image=UIImage(named:star_gray)!
+     
+        show_star3.image=UIImage(named:star_gray)!
+    
+        show_star4.image=UIImage(named:star_gray)!
+
+
+    }
     
 }
